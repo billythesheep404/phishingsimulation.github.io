@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Page with Alert and Logo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: black; 
+            color: white;  
+            position: relative; 
+        }
+        .video-container {
+            margin-top: 50px;
+        }
+        .logo {
+            display: flex;
+            position: absolute;  
+            top: 0px; 
+            right: 10px; 
+            width: 80px;  
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            alert("Oops! You've been phished! Press 'OK' and watch the video prepared by your security team.");
+        });
+    </script>
+</head>
+<body>
+    <img src="assets/logo.png" alt="Site Logo" class="logo">  
+    <h1>Watch Me</h1>
+    <div class="video-container">
+        <video width="1000" controls>
+            <source src="assets/Phished.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>
